@@ -1,0 +1,248 @@
+/*** GENERAL ***/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(img/background.jpg) no-repeat top center/cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+.visible {
+    visibility: visible;
+    /* display: none; */
+}
+.hidden {
+    visibility: hidden;
+    /* display: none; */
+}
+.red {
+    color: red;
+}
+/*** CALCULATOR BODY ***/
+div.main-wrapper {
+    width: 45vw;
+    height: 60vh;
+    box-shadow: 3px 3px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    }
+div#top-area {
+    background: rgba(154,205,50,0.9);
+    width: 100%;
+    height: 7%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+div#top-area h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #333;
+    padding: 5px 0 10px 0;
+}
+div#main-area {
+    background: rgba(240,240,240, 0.9);
+    height: 55%;
+    display: flex;
+    justify-content: center;
+}
+    
+div#bottom-area {
+    background: rgba(240,240,240, 0.9);
+    height: 38%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+div#inputs-container { 
+    width: 70%;
+    margin-top: 1px;
+} 
+/*** INPUTS STYLING ***/
+label {
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    margin: 16px;
+    font-size: 18px;
+}
+input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  padding-left: 5px;
+  font-size: 16px;
+  border-left: 1px solid #333;
+  
+}
+   
+input:focus {
+    outline: none;
+}
+select {
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    color: #333;
+}
+i {   
+    display: block;
+    width: 40px;
+    text-align: center;
+    color: #fff;
+}
+.icon-container {
+    display: flex;
+    align-items: center;
+    background: yellowgreen;
+    border: 1px solid #333;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+/*** DISPLAY-INFO AREA ***/
+#display-info {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.info {
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #333;
+} 
+button#btn {
+    display: block;
+    width: 70%;
+    height: 40px;
+    margin: auto;
+    text-transform: uppercase;
+    color: #333;
+    background: yellowgreen;
+    border: 1px solid #333;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+} 
+button#btn:hover {
+    border: 2px solid #333;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.1)
+}
+#bottom-area {
+    display: flex;
+    flex-direction: column;
+}   
+  /*** ANIMATION ***/
+  #animation {
+      position: absolute;
+      width: 300px;
+      height: 100px;
+      margin-top: 18px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      left: 800px;
+  }
+  .rectangles {
+      border-radius: 3px;
+      border: 1px solid #333;
+      background: yellowgreen;
+      width: 30px;
+      height: 100px;
+      left: 0;
+}
+.rectangles.one,
+.rectangles.three {
+    animation-name: computing;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+}
+.rectangles.two {
+    animation-name: computing-second;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+      
+@keyframes computing {
+    from {height: 100px}
+    to {height: 40px}
+}
+@keyframes computing-second {
+    from {height: 40px}
+    to {height: 100px}
+}
+      
+
+    
+
+    
+    
+    
+    
+ 
+
+
+    
+  
+    
+    
+
+
+
+
+
+    
+    
+  
+      
+    
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+
+ 
+ 
+    
+ 
+    
+    
+    
+    
+
+    

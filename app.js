@@ -1,15 +1,15 @@
 document.getElementById('btn').addEventListener('click', function() {
-    var delay = Math.floor(Math.random() * 2 + 1) * 1000;
+    let delay = Math.floor(Math.random() * 2 + 1) * 1000;
         
         document.getElementById('animation').classList.remove('hidden');
         document.getElementById('animation').classList.add('visible');
     
     setTimeout(() => {
-        var billInput = document.getElementById('bill');
-        var bill = parseInt(billInput.value);
-        var splitInput = document.getElementById('split');
-        var split = parseInt(splitInput.value);
-        var tipInput = document.getElementById('tip');
+        let billInput = document.getElementById('bill');
+        let bill = parseInt(billInput.value);
+        let splitInput = document.getElementById('split');
+        let split = parseInt(splitInput.value);
+        let tipInput = document.getElementById('tip');
         var tip = parseInt(tipInput.value);
         var tipDisplay = bill * tip / 100;
         var totalDisplay = bill + tipDisplay;

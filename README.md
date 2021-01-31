@@ -1,2 +1,2 @@
 # Tip-Calclulator
-Begginer JS project
+Begginer JavaScript project

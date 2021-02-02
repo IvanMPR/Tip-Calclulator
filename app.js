@@ -10,10 +10,10 @@ document.getElementById('btn').addEventListener('click', function() {
         let splitInput = document.getElementById('split');
         let split = parseInt(splitInput.value);
         let tipInput = document.getElementById('tip');
-        var tip = parseInt(tipInput.value);
-        var tipDisplay = bill * tip / 100;
-        var totalDisplay = bill + tipDisplay;
-        var perPersonDisplay = totalDisplay / split;
+        let tip = parseInt(tipInput.value);
+        let tipDisplay = bill * tip / 100;
+        let totalDisplay = bill + tipDisplay;
+        let perPersonDisplay = totalDisplay / split;
         document.getElementById('animation').classList.remove('visible');
         document.getElementById('animation').classList.add('hidden');
         document.getElementById('tip-display').innerHTML = tipDisplay;

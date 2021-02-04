@@ -7,13 +7,19 @@ document.getElementById('btn').addEventListener('click', function() {
     setTimeout(() => {
         let billInput = document.getElementById('bill');
         let bill = parseInt(billInput.value);
+        
         let splitInput = document.getElementById('split');
         let split = parseInt(splitInput.value);
+        
         let tipInput = document.getElementById('tip');
         let tip = parseInt(tipInput.value);
+        
         let tipDisplay = bill * tip / 100;
+        
         let totalDisplay = bill + tipDisplay;
+        
         let perPersonDisplay = totalDisplay / split;
+        
         document.getElementById('animation').classList.remove('visible');
         document.getElementById('animation').classList.add('hidden');
         document.getElementById('tip-display').innerHTML = tipDisplay;

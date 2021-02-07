@@ -1,2 +1,2 @@
 # Tip-Calclulator
-Begginer JavaScript project
+Begginer JavaScript project, simple tip calculator application

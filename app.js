@@ -13,7 +13,7 @@ document.getElementById('btn').addEventListener('click', function() {
         
         let tipInput = document.getElementById('tip');
         let tip = parseInt(tipInput.value);
-        
+        //comment line
         let tipDisplay = bill * tip / 100;
         
         let totalDisplay = bill + tipDisplay;

@@ -1,9 +1,9 @@
 document.getElementById('btn').addEventListener('click', function() {
     let delay = Math.floor(Math.random() * 2 + 1) * 1000;
-        
+        //comment line
         document.getElementById('animation').classList.remove('hidden');
         document.getElementById('animation').classList.add('visible');
-    
+        //comment line 2
     setTimeout(() => {
         let billInput = document.getElementById('bill');
         let bill = parseInt(billInput.value);

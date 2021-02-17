@@ -10,7 +10,7 @@ document.getElementById('btn').addEventListener('click', function() {
         
         let splitInput = document.getElementById('split');
         let split = parseInt(splitInput.value);
-        
+        //second comment
         let tipInput = document.getElementById('tip');
         let tip = parseInt(tipInput.value);
         

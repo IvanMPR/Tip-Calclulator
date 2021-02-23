@@ -3,14 +3,14 @@ document.getElementById('btn').addEventListener('click', function() {
         
         document.getElementById('animation').classList.remove('hidden');
         document.getElementById('animation').classList.add('visible');
-        
+        //comment
     setTimeout(() => {
         let billInput = document.getElementById('bill');
         let bill = parseInt(billInput.value);
         
         let splitInput = document.getElementById('split');
         let split = parseInt(splitInput.value);
-       
+       //comment
         let tipInput = document.getElementById('tip');
         let tip = parseInt(tipInput.value);
         

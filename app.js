@@ -17,7 +17,7 @@ document.getElementById('btn').addEventListener('click', function() {
         let tipDisplay = bill * tip / 100;
         
         let totalDisplay = bill + tipDisplay;
-        //comment
+        
         let perPersonDisplay = totalDisplay / split;
         
         document.getElementById('animation').classList.remove('visible');

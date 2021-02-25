@@ -1,6 +1,6 @@
 document.getElementById('btn').addEventListener('click', function() {
     let delay = Math.floor(Math.random() * 2 + 1) * 1000;
-        
+        // comm
         document.getElementById('animation').classList.remove('hidden');
         document.getElementById('animation').classList.add('visible');
         

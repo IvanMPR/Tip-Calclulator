@@ -7,7 +7,7 @@ document.getElementById('btn').addEventListener('click', function() {
     setTimeout(() => {
         let billInput = document.getElementById('bill');
         let bill = parseInt(billInput.value);
-        
+        //comment
         let splitInput = document.getElementById('split');
         let split = parseInt(splitInput.value);
        

@@ -19,7 +19,7 @@ document.getElementById('btn').addEventListener('click', function() {
         let totalDisplay = bill + tipDisplay;
         
         let perPersonDisplay = totalDisplay / split;
-        
+        //COMM
         document.getElementById('animation').classList.remove('visible');
         document.getElementById('animation').classList.add('hidden');
         document.getElementById('tip-display').innerHTML = tipDisplay;

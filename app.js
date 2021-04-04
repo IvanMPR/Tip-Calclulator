@@ -15,7 +15,7 @@ document.getElementById('btn').addEventListener('click', function() {
         let tip = parseInt(tipInput.value);
         
         let tipDisplay = bill * tip / 100;
-        //comm2
+        //
         let totalDisplay = bill + tipDisplay;
         
         let perPersonDisplay = totalDisplay / split;

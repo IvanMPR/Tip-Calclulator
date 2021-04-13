@@ -3,7 +3,7 @@ document.getElementById('btn').addEventListener('click', function() {
         
         document.getElementById('animation').classList.remove('hidden');
         document.getElementById('animation').classList.add('visible');
-        // 
+        // comment
     setTimeout(() => {
         let billInput = document.getElementById('bill');
         let bill = parseInt(billInput.value);
@@ -15,7 +15,7 @@ document.getElementById('btn').addEventListener('click', function() {
         let tip = parseInt(tipInput.value);
         
         let tipDisplay = bill * tip / 100;
-        // 
+        // commment
         let totalDisplay = bill + tipDisplay;
         
         let perPersonDisplay = totalDisplay / split;

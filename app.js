@@ -15,8 +15,7 @@ const resultsBox = document.getElementById("display-info");
 window.addEventListener("load", function () {
   bill.focus();
 });
-
-//////////////////////////////
+////////////////////////////////////////////////////////////////////
 function calcTip(billAm, splitAm = 1, tipAm) {
   if (!billAm || !tipAm) {
     alert(
@@ -37,8 +36,6 @@ function calcTip(billAm, splitAm = 1, tipAm) {
 
   resultsBox.classList.remove("hidden");
   resultsBox.classList.add("visible");
-
-  // return console.log(billAm, splitAm, tipAm);
 }
 
 function reset() {
@@ -54,8 +51,6 @@ function reset() {
   bill.focus();
 }
 
-// // console.log(billInput.value);
-// // console.log(button);
 button.addEventListener("click", function () {
   calcTip(
     parseInt(bill.value),

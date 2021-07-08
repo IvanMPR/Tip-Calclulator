@@ -7,11 +7,11 @@ const calculatedTip = document.getElementById("tip-display");
 const calculatedTotal = document.getElementById("total-display");
 const calculatedSplit = document.getElementById("per-person-display");
 ///////////////////////////////////////////////////////////////
-const animation = document.getElementById("animation");
-const button = document.querySelector("#calc");
+const calcButton = document.querySelector("#calc");
 const resetButton = document.querySelector("#reset");
 const resultsBox = document.getElementById("display-info");
 //////////////////////////////////////////////////////////////////////
+
 window.addEventListener("load", function () {
   bill.focus();
 });
@@ -51,7 +51,7 @@ function reset() {
   bill.focus();
 }
 
-button.addEventListener("click", function () {
+calcButton.addEventListener("click", function () {
   calcTip(
     parseInt(bill.value),
     parseInt(split.value) || undefined,

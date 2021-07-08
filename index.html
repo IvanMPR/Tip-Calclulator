@@ -19,14 +19,14 @@
       <div id="main-area">
         <div id="inputs-container">
           <div class="inputs">
-            <label for="number">Bill</label>
+            <label for="Bill amount">Bill</label>
             <div class="icon-container">
               <i class="fas fa-file-invoice-dollar fa-lg"></i>
               <input type="number" id="bill" placeholder="Enter Bill Amount" />
             </div>
           </div>
           <div class="inputs">
-            <label for="number">Split</label>
+            <label for="Split amount">Split</label>
             <div class="icon-container">
               <i class="fas fa-user-tie fa-lg"></i>
               <input
@@ -37,7 +37,7 @@
             </div>
           </div>
           <div class="inputs">
-            <label for="select">Tip</label>
+            <label for="Tip amount">Tip</label>
             <div class="icon-container">
               <i class="fas fa-percentage fa-lg"></i>
               <input
@@ -50,11 +50,6 @@
         </div>
       </div>
 
-      <div id="animation" class="hidden">
-        <div class="rectangles one"></div>
-        <div class="rectangles two"></div>
-        <div class="rectangles three"></div>
-      </div>
       <div id="bottom-area">
         <div id="display-info" class="hidden">
           <div class="info">
@@ -71,7 +66,8 @@
           </div>
         </div>
 
-        <button id="btn">Calculate</button>
+        <button class="btn" id="calc">Calculate</button>
+        <button class="btn" id="reset">Reset</button>
       </div>
     </div>
     <script src="app.js"></script>

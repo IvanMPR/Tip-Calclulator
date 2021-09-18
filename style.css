@@ -181,6 +181,9 @@ i {
     width: 90%;
     font-size: 1.6rem;
   }
+  .btn {
+    height: 3rem;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1300px) {

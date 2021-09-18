@@ -187,6 +187,9 @@ i {
   label {
     margin: 1rem;
   }
+  div#top-area {
+    height: 4vh;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1300px) {

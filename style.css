@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  line-height: 1.5;
+}
+html {
+  font-size: 62.5%;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -14,6 +16,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 1.5;
 }
 body::before {
   content: "";
@@ -25,13 +28,12 @@ body::before {
   background: rgba(0, 0, 0, 0.2);
   z-index: -1;
 }
+
 .visible {
   visibility: visible;
-  /* display: none; */
 }
 .hidden {
   visibility: hidden;
-  /* display: none; */
 }
 .red {
   color: red;
@@ -40,21 +42,22 @@ body::before {
 div.main-wrapper {
   width: 50vw;
   height: 65vh;
-  box-shadow: 3px 3px 10px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  box-shadow: 3px 3px 1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
 }
 div#top-area {
   background: rgba(154, 205, 50, 0.9);
   width: 100%;
   height: 7%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
-div#top-area h2 {
+div#top-area h1 {
+  font-size: 2.2rem;
   text-transform: uppercase;
   text-align: center;
   color: #333;
-  padding: 5px 0 10px 0;
+  padding: 0.8rem 0 0 0;
 }
 div#main-area {
   background: rgba(240, 240, 240, 0.9);
@@ -66,8 +69,8 @@ div#main-area {
 div#bottom-area {
   background: rgba(240, 240, 240, 0.9);
   height: 38%;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 div#inputs-container {
   width: 70%;
@@ -78,15 +81,15 @@ label {
   text-align: center;
   text-transform: uppercase;
   display: block;
-  margin: 16px;
-  font-size: 18px;
+  margin: 1.6rem;
+  font-size: 1.8rem;
 }
 input {
   width: 100%;
-  height: 40px;
+  height: 4rem;
   border: none;
-  padding-left: 5px;
-  font-size: 16px;
+  padding-left: 0.5rem;
+  font-size: 1.6rem;
   border-left: 1px solid #333;
 }
 
@@ -95,14 +98,14 @@ input:focus {
 }
 select {
   width: 100%;
-  height: 40px;
+  height: 4rem;
   border: none;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #333;
 }
 i {
   display: block;
-  width: 40px;
+  width: 4rem;
   text-align: center;
   color: #fff;
 }
@@ -112,7 +115,7 @@ i {
   background: yellowgreen;
   border: 1px solid #333;
   border-radius: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 /*** DISPLAY-INFO AREA ***/
 #display-info {
@@ -122,12 +125,12 @@ i {
   align-items: center;
   justify-content: space-between;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .info {
   text-align: center;
   background: #fff;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 4px;
   border: 1px solid #333;
 }
@@ -135,14 +138,14 @@ i {
 .btn {
   display: block;
   width: 70%;
-  height: 40px;
+  height: 4rem;
   margin: auto;
   text-transform: uppercase;
   color: #333;
   background: yellowgreen;
   border: 1px solid #333;
   border-radius: 3px;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   letter-spacing: 1.2px;
   cursor: pointer;
@@ -159,4 +162,37 @@ i {
 #bottom-area {
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  div.main-wrapper {
+    width: 80vw;
+    height: 65vh;
+  }
+  div#inputs-container {
+    width: 90%;
+  }
+  #display-info {
+    width: 90%;
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1300px) {
+  html {
+    font-size: 55%;
+  }
+  div.main-wrapper {
+    width: 75vw;
+    height: 65vh;
+  }
+  div#inputs-container {
+    width: 85%;
+  }
+  #display-info {
+    width: 80%;
+    font-size: 1.7rem;
+  }
 }

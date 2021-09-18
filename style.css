@@ -167,8 +167,11 @@ i {
   html {
     font-size: 50%;
   }
+  body {
+    align-items: flex-start;
+  }
   div.main-wrapper {
-    width: 80vw;
+    width: 100vw;
     height: 85vh;
   }
   div#inputs-container {
